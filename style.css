@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url(fonts/arial.ttf);
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(fonts/Georgia%20Regular%20font.ttf);
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url(fonts/impact.ttf);
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url(fonts/Tahoma%20Regular%20font.ttf);
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(fonts/times.ttf);
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url(fonts/verdana.ttf);
+}
+
+body {
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+#main-block,
+#edit-block {
+    z-index: 1;
+}
+
+header {
+    background-color: gray;
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+nav {
+    width: 650px;
+}
+
+#text-color-menu,
+.color-wrap,
+#ol-create,
+#ul-create,
+#sign-in,
+#table-create {
+    padding: 10px;
+}
+
+#text-color-menu,
+.color-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+
+#text-color-menu,
+#bgr-color-menu,
+#exampleFormControlTextarea1,
+#table-create {
+    min-height: 300px;
+}
+
+#ol-create,
+#ul-create,
+#sign-in,
+#text-color-menu,
+#bgr-color-menu {
+    width: 600px;
+    left: calc(50vw - 300px);
+}
+
+#ol-create,
+#ul-create,
+#sign-in,
+#text-color-menu,
+#bgr-color-menu,
+#table-create {
+    z-index: 9999;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.text-color,
+.bgr-color {
+    width: calc(500px / 7);
+    height: calc(240px / 3);
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.color-wrap {
+    margin: 10px auto;
+}
+
+.bgr-image {
+    width: calc(550px / 3);
+    height: calc(240px / 3);
+    margin: 3px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+#exampleFormControlTextarea1 {
+    border-color: transparent;
+    width: 100vw;
+}
+
+#exampleFormControlTextarea1,
+#sign-in {
+    display: flex;
+    flex-direction: column;
+}
+
+#table-create {
+    width: 800px;
+    left: calc(50vw - 400px);
+}
+
+#reset,
+#create-table {
+    margin: 0 15px;
+    width: 356px;
+}
+
+#ol-create,
+#ul-create,
+#table-create {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#ol-create,
+#ul-create,
+#table-create,
+#sign-in {
+    justify-content: space-between;
+}
+
+#ol-reset,
+#create-ol,
+#ul-reset,
+#create-ul {
+    width: 250px;
+    margin: 0 15px;
+}
+
+#black-bgr,
+#black-bgr-sn {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 500;
+}
+
+#ol-create,
+#ul-create,
+#black-bgr,
+#table-create,
+#text-color-menu,
+#bgr-color-menu,
+#edit-block {
+    display: none;
+}
+
+#sign-in {
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+}
